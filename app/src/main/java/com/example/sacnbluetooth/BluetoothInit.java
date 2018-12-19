@@ -83,7 +83,7 @@ public class BluetoothInit extends AppCompatActivity implements View.OnClickList
             return;
         }
     }
-    @Override//Button点击事件
+    @Override//Button点击事
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.open_bluetooth:
