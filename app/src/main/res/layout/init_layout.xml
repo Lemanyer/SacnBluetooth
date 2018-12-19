@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/open_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开蓝牙"/>
+    <Button
+        android:id="@+id/close_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭蓝牙"/>
+    <Button
+        android:id="@+id/pair_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="配对设备"
+        android:onClick="onMakeDiscoverableButtonClicked"/>
+    <Button
+        android:id="@+id/discoverable_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开放检测(120s)"
+        android:onClick="onMakeDiscoverableButtonClicked"/>
+    <Button
+        android:id="@+id/service_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="服务端"
+        android:onClick="onOpenServerSocketButtonClicked"/>
+    <Button
+        android:id="@+id/client_bluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="客户端"
+        android:onClick="onOpenClientSocketButtonClicked"/>
+    <ListView
+        android:id="@+id/pair_devices_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

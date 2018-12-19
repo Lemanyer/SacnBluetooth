@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id = "@+id/devices"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ProgressBar
+        android:id="@+id/start_discovery_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <Button android:id="@+id/start_search_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始搜索"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"/>
+    <ListView
+        android:id="@+id/device_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollingCache="false"
+        android:divider="#ffc6c6c6"
+        android:layout_weight="1.0"
+        android:layout_above = "@id/start_search_button"
+        />
+</RelativeLayout>
+
